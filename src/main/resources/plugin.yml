@@ -1,4 +1,4 @@
-name: BungeeChatPlus
-main : com.gmail.favorlock.bungeechatplus.BungeeChatPlus
-version: 0.6.1
-author: Favorlock
+name: PwnBungeeChat
+main : com.pwn9.pwnbungeechat.PwnBungeeChat
+version: 0.7.0
+author: Sage905 (based on BungeeChatPlus by Favorlock)

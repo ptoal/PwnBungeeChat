@@ -1,15 +1,14 @@
 package testing.commands;
 
-import com.gmail.favorlock.bungeechatplus.cmd.commands.Verbose;
-import com.gmail.favorlock.bungeechatplus.config.BungeeChatPlusConfig;
-import com.gmail.favorlock.bungeechatplus.config.ChannelStorage;
-import com.gmail.favorlock.bungeechatplus.config.ChatterStorage;
-import com.gmail.favorlock.bungeechatplus.entities.Channel;
-import com.gmail.favorlock.bungeechatplus.entities.Chatter;
-import com.gmail.favorlock.bungeechatplus.utils.FontFormat;
+import com.pwn9.pwnbungeechat.cmd.commands.Verbose;
+import com.pwn9.pwnbungeechat.config.PwnBungeeChatConfig;
+import com.pwn9.pwnbungeechat.config.ChannelStorage;
+import com.pwn9.pwnbungeechat.config.ChatterStorage;
+import com.pwn9.pwnbungeechat.entities.Channel;
+import com.pwn9.pwnbungeechat.entities.Chatter;
+import com.pwn9.pwnbungeechat.utils.FontFormat;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.stubbing.OngoingStubbing;
 import org.powermock.modules.junit4.PowerMockRunner;
 import testing.BaseUnit;
 
@@ -21,12 +20,12 @@ public class VerboseTest extends BaseUnit {
 	
 	@Test
 	public void execute() {
-		// When pdf.getName() is called return "BungeeChatPlus"
-		when(pdf.getName()).thenReturn("BungeeChatPlus");
+		// When pdf.getName() is called return "PwnBungeeChat"
+		when(pdf.getName()).thenReturn("PwnBungeeChat");
 	    // When plugin.getDescription() is called return pdf
 	    when(plugin.getDescription()).thenReturn(pdf);
 	    // Let's initialize our config
-	    BungeeChatPlusConfig config = new BungeeChatPlusConfig(plugin);
+	    PwnBungeeChatConfig config = new PwnBungeeChatConfig(plugin);
 	    // When plugin.getConfig() return config
 	    when(plugin.getConfig()).thenReturn(config);
 	    // When player.getName() return "Favorlock"

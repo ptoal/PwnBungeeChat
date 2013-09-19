@@ -1,2 +1,2 @@
-BungeeChatPlus
+PwnBungeeChat
 ==============
